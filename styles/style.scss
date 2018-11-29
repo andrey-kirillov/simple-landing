@@ -1,0 +1,214 @@
+/***** ----- Fonts ----- *****/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i');
+/***** ----- End Fonts ----- *****/
+
+
+/***** ----- Colors ----- *****/
+$main-font-color: #f4f5f9;
+$main-nav-active-font-color: #e74c3c;
+$main-title-font-color: #f4f5f9;
+$mainHeader-btn-shadow: #fff;
+/***** ----- End Colors ----- *****/
+
+
+
+/***** ----- Reset Css ----- *****/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $main-font-color;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+/***** ----- End Reset Css ----- *****/
+
+
+/***** ----- Share Css ----- *****/
+.main-container {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+  z-index: 20;
+}
+/***** ----- End Share Css ----- *****/
+
+
+/***** ----- Start Main Header ----- *****/
+.mainHeader {
+  height: 100vh;
+  position: relative;
+
+  .mainHeader--footer__white {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    border-top: 123px solid transparent;
+    border-left: 50vw solid #fff;
+    border-right: 50vw solid #fff;
+  }
+
+  .mainHeader--btn__toBottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    z-index: 10;
+    border-radius: 50%;
+    background: #e3e4e8 url(../img/anchor.png) no-repeat center center;
+  }
+
+  /* Main Header slider */
+  .carousel.slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    .carousel-inner {
+      height: 100%;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 3px;
+      background-color: #e74c3c;
+      background-size: 50%;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      z-index: 30;
+      top: 100px;
+      bottom: 100px;
+    }
+  }
+
+  .mainHeader--sliderFilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+  }
+
+  /* Logo */
+  .logo {
+    display: inline-block;
+    width: 140px;
+    height: 55px;
+    margin-right: 20px;
+  }
+
+  /* Nav menu */
+  .mainHeader--nav-menu {
+    position: relative;
+    z-index: 40;
+    height: 130px;
+    text-transform: uppercase;
+    margin: 0 20px;
+
+    ul {
+      flex-basis: 730px;
+    }
+
+    .mainHeader--nav-menu-item {
+      padding: 20px 5px;
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s;
+
+      &.active, &:hover {
+        color: $main-nav-active-font-color;
+        border-color: $main-nav-active-font-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* Main Header Content*/
+  .mainHeader--content {
+    text-align: center;
+    flex-grow: 1;
+
+    .mainHeader--content--beforeTitle {
+      font-size: 24px;
+    }
+
+    .mainHeader--content--title {
+      font-size: 72px;
+      font-weight: bold;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: $main-title-font-color;
+    }
+
+    .mainHeader--content--afterTitle {
+      max-width: 600px;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .mainHeader--separator {
+      margin: 50px 0;
+
+      .separator--line {
+        border-bottom: 1px solid $main-title-font-color;
+        width: 80px;
+      }
+
+      .separator--circle {
+        width: 6px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $main-nav-active-font-color;
+        margin: 0 10px;
+      }
+    }
+
+    .mainHeader--buttonGroup {
+      margin-top: 70px;
+
+      a {
+        display: inline-block;
+        width: 225px;
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: transparent;
+
+        &.active, &:hover {
+          background-color: $main-nav-active-font-color;
+        }
+
+        &:hover {
+          box-shadow: 1px 1px 5px $mainHeader-btn-shadow, -1px 1px 5px $mainHeader-btn-shadow;
+        }
+
+        &:last-child {
+          border-color: $main-font-color;
+        }
+
+        &:first-child {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+/***** ----- End Main Header ----- *****/
