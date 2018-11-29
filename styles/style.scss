@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i');
 /***** ----- End Fonts ----- *****/
 
-
 /***** ----- Colors ----- *****/
 $main-font-color: #f4f5f9;
 $main-nav-active-font-color: #e74c3c;
 $main-title-font-color: #f4f5f9;
 $mainHeader-btn-shadow: #fff;
 /***** ----- End Colors ----- *****/
-
-
 
 /***** ----- Reset Css ----- *****/
 * {
@@ -44,7 +41,6 @@ a:link, a:visited, a:hover, a:active {
   z-index: 20;
 }
 /***** ----- End Share Css ----- *****/
-
 
 /***** ----- Start Main Header ----- *****/
 .mainHeader {
@@ -136,6 +132,10 @@ a:link, a:visited, a:hover, a:active {
         border-color: $main-nav-active-font-color;
         cursor: pointer;
       }
+    }
+
+    .nav-menu--mobile__visible {
+      display: none;
     }
   }
 

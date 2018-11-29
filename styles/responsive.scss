@@ -1,3 +1,110 @@
-/***** ----- Start Main Header ----- *****/
+/***** ----- Colors ----- *****/
+$nav-items-font-color: #000;
+$nav-menu-bg-color: #fff;
+/***** ----- End Colors ----- *****/
 
-/***** ----- End Main Header ----- *****/
+/******************** width < 768px ********************/
+@media(max-width: 768px) {
+
+  /***** ----- Start Main Header ----- *****/
+  .mainHeader {
+
+    .mainHeader--footer__white {
+      height: 70px;
+      border-top-width: 50px;
+    }
+
+    /* Nav menu */
+    .mainHeader--nav-menu {
+      ul {
+        display: none!important;
+      }
+
+      .mainHeader--nav-menu-item {
+        padding: 20px 50px;
+        text-align: center;
+        color: $nav-items-font-color;
+      }
+
+      .mobileNavMenu {
+        display:block!important;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: $nav-menu-bg-color;
+      }
+    }
+
+    .nav-menu--mobile__visible {
+      display: block!important;
+      font-size: 32px;
+    }
+
+    /* Main Header slider */
+    .carousel.slide {
+      .carousel-control-next.hideSliderControl {
+        display: none;
+      }
+    }
+
+    /* Main Header Content*/
+    .mainHeader--content {
+      margin-top: -100px;
+      padding: 0 20px;
+
+      .mainHeader--content--title {
+        font-size: 36px;
+      }
+
+      .mainHeader--content--afterTitle {
+        max-width: 200px;
+      }
+
+      .mainHeader--separator {
+        margin: 10px 0;
+      }
+
+      .mainHeader--buttonGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+
+        a:first-child {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+  }
+  /***** ----- End Main Header ----- *****/
+}
+/******************** End width < 768px ********************/
+
+
+/********************  Height < 667px ********************/
+@media(max-height: 667px){
+  /***** ----- Start Main Header ----- *****/
+  .mainHeader {
+
+    /* Main Header Content*/
+    .mainHeader--content {
+
+      .mainHeader--content--beforeTitle {
+        font-size: 18px;
+      }
+
+      .mainHeader--content--afterTitle {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .mainHeader--content--title {
+        font-size: 24px;
+      }
+    }
+  }
+  /***** ----- End Main Header ----- *****/
+}
+/******************** End height < 667px ********************/
