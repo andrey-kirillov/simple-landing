@@ -3,10 +3,14 @@
 /***** ----- End Fonts ----- *****/
 
 /***** ----- Colors ----- *****/
+// mainHeader
 $main-font-color: #f4f5f9;
 $main-nav-active-font-color: #e74c3c;
 $main-title-font-color: #f4f5f9;
 $mainHeader-btn-shadow: #fff;
+// OurAdvantages
+$ourAdvantages-header-font-color: #6a6a6a;
+$ourAdvantages-text-font-color: #999999;
 /***** ----- End Colors ----- *****/
 
 /***** ----- Reset Css ----- *****/
@@ -24,6 +28,7 @@ ul {
 body {
   font-family: "Open Sans", sans-serif;
   color: $main-font-color;
+  overflow-x: hidden;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -39,6 +44,7 @@ a:link, a:visited, a:hover, a:active {
   margin: auto;
   position: relative;
   z-index: 20;
+  overflow-x: hidden;
 }
 /***** ----- End Share Css ----- *****/
 
@@ -212,3 +218,67 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 /***** ----- End Main Header ----- *****/
+
+/***** ----- Our advantages ----- *****/
+.ourAdvantages {
+  margin: 100px 0;
+
+  .ourAdvantages--item {
+    width: 25%;
+    min-width: 200px;
+    text-align: center;
+    padding: 14px 20px 0;
+
+    h3 {
+      color: $ourAdvantages-header-font-color;
+      font-size: 18px;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 1px;
+        width: 50px;
+        background-color: $ourAdvantages-header-font-color;
+      }
+    }
+
+    p {
+      color: $ourAdvantages-text-font-color;
+      font-size: 12px;
+    }
+
+    .ourAdvantages--item__img {
+      margin: 0 auto 50px;
+      width: 70px;
+      height: 70px;
+      border: 1px solid #e5e5e5;
+    }
+
+    .ourAdvantages--item__design {
+      border: 1px solid #e74c3c;
+      transform: rotate(45deg);
+      background: url(../img/advantagesDesign.png) no-repeat center center;
+    }
+
+    .ourAdvantages--item__code {
+      background: url(../img/advantagesCode.png) no-repeat center center;
+    }
+
+    .ourAdvantages--item__ideas {
+      background: url(../img/advantagesIdeas.png) no-repeat center center;
+    }
+
+    .ourAdvantages--item__support {
+      background: url(../img/advantagesSupport.png) no-repeat center center;
+    }
+  }
+}
+/***** ----- End Our advantages ----- *****/

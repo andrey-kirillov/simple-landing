@@ -18,6 +18,7 @@ ul {
 body {
   font-family: "Open Sans", sans-serif;
   color: #f4f5f9;
+  overflow-x: hidden;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -32,6 +33,7 @@ a:link, a:visited, a:hover, a:active {
   margin: auto;
   position: relative;
   z-index: 20;
+  overflow-x: hidden;
 }
 
 /***** ----- End Share Css ----- *****/
@@ -180,5 +182,60 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /***** ----- End Main Header ----- *****/
+/***** ----- Our advantages ----- *****/
+.ourAdvantages {
+  margin: 100px 0;
+}
+.ourAdvantages .ourAdvantages--item {
+  width: 25%;
+  min-width: 200px;
+  text-align: center;
+  padding: 14px 20px 0;
+}
+.ourAdvantages .ourAdvantages--item h3 {
+  color: #6a6a6a;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.ourAdvantages .ourAdvantages--item h3:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 1px;
+  width: 50px;
+  background-color: #6a6a6a;
+}
+.ourAdvantages .ourAdvantages--item p {
+  color: #999999;
+  font-size: 12px;
+}
+.ourAdvantages .ourAdvantages--item .ourAdvantages--item__img {
+  margin: 0 auto 50px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #e5e5e5;
+}
+.ourAdvantages .ourAdvantages--item .ourAdvantages--item__design {
+  border: 1px solid #e74c3c;
+  transform: rotate(45deg);
+  background: url(../img/advantagesDesign.png) no-repeat center center;
+}
+.ourAdvantages .ourAdvantages--item .ourAdvantages--item__code {
+  background: url(../img/advantagesCode.png) no-repeat center center;
+}
+.ourAdvantages .ourAdvantages--item .ourAdvantages--item__ideas {
+  background: url(../img/advantagesIdeas.png) no-repeat center center;
+}
+.ourAdvantages .ourAdvantages--item .ourAdvantages--item__support {
+  background: url(../img/advantagesSupport.png) no-repeat center center;
+}
+
+/***** ----- End Our advantages ----- *****/
 
 /*# sourceMappingURL=style.css.map */
