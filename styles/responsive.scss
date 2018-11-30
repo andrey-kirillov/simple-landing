@@ -79,9 +79,47 @@ $nav-menu-bg-color: #fff;
 
   }
   /***** ----- End Main Header ----- *****/
+
+  /***** ----- Our history ----- *****/
+  .ourHistory {
+    padding: 0 20px;
+    .ourHistory-image, .ourHistory-content {
+      width: 100%;
+      padding: 0;
+    }
+
+    .ourHistory-image {
+      background-size: 100% 100%;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  /***** ----- End Our history ----- *****/
 }
 /******************** End width < 768px ********************/
 
+
+/******************** width < 425px ********************/
+@media(max-width: 425px) {
+
+  /***** ----- Our history ----- *****/
+  .ourHistory {
+
+    .ourHistory-image {
+      height: 300px;
+    }
+
+    .ourHistory-content {
+      a {
+        margin: 0 auto;
+      }
+    }
+
+  }
+  /***** ----- End Our history ----- *****/
+}
+  /******************** End width < 425px ********************/
 
 /********************  Height < 667px ********************/
 @media(max-height: 667px){

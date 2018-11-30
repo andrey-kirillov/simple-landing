@@ -237,5 +237,49 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /***** ----- End Our advantages ----- *****/
+/***** ----- Our history ----- *****/
+.ourHistory {
+  padding-left: 20px;
+}
+.ourHistory .ourHistory-image {
+  padding: 0 20px;
+  background: url(../img/monitor-our-history.png) no-repeat;
+  background-size: contain;
+  height: 400px;
+  width: 50%;
+}
+.ourHistory .ourHistory-content {
+  width: 50%;
+  padding: 0 20px;
+  min-width: 200px;
+}
+.ourHistory .ourHistory-content h3 {
+  text-transform: uppercase;
+  padding-left: 20px;
+  border-left: 6px solid #e74c3c;
+  color: #6a6a6a;
+  font-size: 36px;
+}
+.ourHistory .ourHistory-content p {
+  color: #999999;
+  line-height: 29px;
+}
+.ourHistory .ourHistory-content a {
+  display: inline-block;
+  width: 225px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  position: relative;
+}
+.ourHistory .ourHistory-content a:hover {
+  opacity: 0.5;
+}
+
+/***** ----- End Our history ----- *****/
 
 /*# sourceMappingURL=style.css.map */

@@ -6,11 +6,16 @@
 // mainHeader
 $main-font-color: #f4f5f9;
 $main-nav-active-font-color: #e74c3c;
+$main-red-color: #e74c3c;
 $main-title-font-color: #f4f5f9;
 $mainHeader-btn-shadow: #fff;
 // OurAdvantages
 $ourAdvantages-header-font-color: #6a6a6a;
 $ourAdvantages-text-font-color: #999999;
+//Our history
+$our-history-title-font-color: #6a6a6a;
+$our-history-text-font-color: #999999;
+$our-history-btn-shadow: rgba(0,0,0, 0.3);
 /***** ----- End Colors ----- *****/
 
 /***** ----- Reset Css ----- *****/
@@ -89,7 +94,7 @@ a:link, a:visited, a:hover, a:active {
       width: 45px;
       height: 45px;
       border-radius: 3px;
-      background-color: #e74c3c;
+      background-color: $main-red-color;
       background-size: 50%;
     }
 
@@ -180,7 +185,7 @@ a:link, a:visited, a:hover, a:active {
         width: 6px;
         height: 7px;
         border-radius: 50%;
-        background-color: $main-nav-active-font-color;
+        background-color: $main-red-color;
         margin: 0 10px;
       }
     }
@@ -199,7 +204,7 @@ a:link, a:visited, a:hover, a:active {
         background-color: transparent;
 
         &.active, &:hover {
-          background-color: $main-nav-active-font-color;
+          background-color: $main-red-color;
         }
 
         &:hover {
@@ -263,7 +268,7 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .ourAdvantages--item__design {
-      border: 1px solid #e74c3c;
+      border: 1px solid $main-red-color;
       transform: rotate(45deg);
       background: url(../img/advantagesDesign.png) no-repeat center center;
     }
@@ -282,3 +287,52 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 /***** ----- End Our advantages ----- *****/
+
+/***** ----- Our history ----- *****/
+.ourHistory {
+  padding-left: 20px;
+  .ourHistory-image {
+    padding: 0 20px;
+    background: url(../img/monitor-our-history.png) no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 50%;
+  }
+
+  .ourHistory-content {
+    width: 50%;
+    padding: 0 20px;
+    min-width: 200px;
+    h3 {
+      text-transform: uppercase;
+      padding-left: 20px;
+      border-left: 6px solid $main-red-color;
+      color: $our-history-title-font-color;
+      font-size: 36px;
+    }
+
+    p {
+      color: $our-history-text-font-color;
+      line-height: 29px;
+    }
+
+    a {
+      display: inline-block;
+      width: 225px;
+      height: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background-color: $main-red-color;
+      position: relative;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+/***** ----- End Our history ----- *****/
