@@ -1,0 +1,66 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-advantagesCode {
+  background-image: url(../img/sprite.png);
+  background-position: -37px 0px;
+  width: 21px;
+  height: 19px;
+}
+.icon-advantagesDesign {
+  background-image: url(../img/sprite.png);
+  background-position: -253px 0px;
+  width: 28px;
+  height: 26px;
+}
+.icon-advantagesIdeas {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 17px;
+  height: 27px;
+}
+.icon-advantagesSupport {
+  background-image: url(../img/sprite.png);
+  background-position: -78px 0px;
+  width: 21px;
+  height: 22px;
+}
+.icon-anchor {
+  background-image: url(../img/sprite.png);
+  background-position: -119px 0px;
+  width: 64px;
+  height: 64px;
+}
+.icon-service-design {
+  background-image: url(../img/sprite.png);
+  background-position: -301px 0px;
+  width: 31px;
+  height: 26px;
+}
+.icon-service-monitor {
+  background-image: url(../img/sprite.png);
+  background-position: -206px 0px;
+  width: 27px;
+  height: 22px;
+}
+.icon-service-photo {
+  background-image: url(../img/sprite.png);
+  background-position: -161px 0px;
+  width: 25px;
+  height: 22px;
+}
