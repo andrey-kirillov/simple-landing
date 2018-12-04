@@ -67,12 +67,56 @@
     width: 100%;
     padding: 0;
   }
+  .ourHistory .ourHistory-image h3, .ourHistory .ourHistory-content h3 {
+    margin: 20px 0;
+  }
+  .ourHistory .ourHistory-image a, .ourHistory .ourHistory-content a {
+    margin-top: 30px;
+  }
   .ourHistory .ourHistory-image {
     background-size: 100% 100%;
     margin-bottom: 20px;
   }
 
   /***** ----- End Our history ----- *****/
+  /***** ----- Our service ----- *****/
+  .ourService {
+    margin-top: 70px;
+    padding: 50px 20px;
+  }
+  .ourService .ourService--text-part {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .ourService .ourService--text-part h3 {
+    font-size: 24px;
+    border-left: 6px solid transparent;
+    padding: 0;
+  }
+  .ourService .ourService--text-part h5 {
+    font-size: 16px;
+  }
+  .ourService .ourService--text-part p {
+    font-size: 14px;
+    padding-top: 80px;
+    line-height: 2;
+  }
+  .ourService .ourService--separator--item {
+    position: absolute;
+    display: block;
+    box-sizing: content-box;
+    z-index: 30;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+  .ourService .ourService--img-part {
+    display: none;
+  }
+
+  /***** ----- End Our service ----- *****/
 }
 /******************** End width < 768px ********************/
 /******************** width < 425px ********************/

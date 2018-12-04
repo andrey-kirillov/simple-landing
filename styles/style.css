@@ -281,5 +281,64 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /***** ----- End Our history ----- *****/
+/***** ----- Our service ----- *****/
+.ourService {
+  margin-top: 150px;
+  background-color: #202020;
+}
+.ourService .ourService--text-part {
+  width: 50%;
+  max-width: 585px;
+  background-color: #202020;
+  padding: 150px 80px 150px 20px;
+  text-align: right;
+}
+.ourService .ourService--text-part h3 {
+  border-right: 6px solid #e74c3c;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+.ourService .ourService--text-part h5 {
+  margin-top: 50px;
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.ourService .ourService--text-part p {
+  font-size: 14px;
+  color: #999999;
+  position: relative;
+}
+.ourService .ourService--separator--item {
+  position: absolute;
+  display: block;
+  box-sizing: content-box;
+  z-index: 30;
+  right: 0;
+  top: 50%;
+  transform: translate(calc(50% + 80px), -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid #585858;
+}
+.ourService .ourService--separator--item.web-design {
+  background: #fff url(../img/service-design.png) no-repeat center center;
+}
+.ourService .ourService--separator--item.print-design {
+  background: #fff url(../img/service-monitor.png) no-repeat center center;
+}
+.ourService .ourService--separator--item.photography {
+  background: #fff url(../img/service-photo.png) no-repeat center center;
+}
+.ourService .ourService--img-part {
+  width: 50%;
+  background: url(../img/service-ipad.jpg) no-repeat left top;
+  background-size: 100% 100%;
+}
+
+/***** ----- End Our service ----- *****/
 
 /*# sourceMappingURL=style.css.map */
