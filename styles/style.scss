@@ -12,15 +12,23 @@ $mainHeader-btn-shadow: #fff;
 // OurAdvantages
 $ourAdvantages-header-font-color: #6a6a6a;
 $ourAdvantages-text-font-color: #999999;
-//Our history
+// Our history
 $our-history-title-font-color: #6a6a6a;
 $our-history-text-font-color: #999999;
 $our-history-btn-shadow: rgba(0,0,0, 0.3);
-//Our service
+// Our service
 $our-service-main-bg: #202020;
 $our-service-title: #fff;
 $our-service-regular-text: #999999;
+// Recent works
+$recent-works-title-color: #6a6a6a;
+$recent-works-plain-text-color: #999999;
 /***** ----- End Colors ----- *****/
+
+/***** ----- Dimensions ----- *****/
+$section-title-fontSize: 36px;
+/***** ----- End Dimensions ----- *****/
+
 
 /***** ----- Reset Css ----- *****/
 * {
@@ -54,6 +62,26 @@ a:link, a:visited, a:hover, a:active {
   position: relative;
   z-index: 20;
   overflow: hidden;
+}
+
+.section--separator__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+
+  .separator--line {
+    border-bottom: 1px solid $main-title-font-color;
+    width: 80px;
+  }
+
+  .separator--circle {
+    width: 6px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $main-red-color;
+    margin: 0 10px;
+  }
 }
 /***** ----- End Share Css ----- *****/
 
@@ -177,23 +205,6 @@ a:link, a:visited, a:hover, a:active {
       line-height: 1.75;
     }
 
-    .mainHeader--separator {
-      margin: 50px 0;
-
-      .separator--line {
-        border-bottom: 1px solid $main-title-font-color;
-        width: 80px;
-      }
-
-      .separator--circle {
-        width: 6px;
-        height: 7px;
-        border-radius: 50%;
-        background-color: $main-red-color;
-        margin: 0 10px;
-      }
-    }
-
     .mainHeader--buttonGroup {
       margin-top: 70px;
 
@@ -312,7 +323,7 @@ a:link, a:visited, a:hover, a:active {
       padding-left: 20px;
       border-left: 6px solid $main-red-color;
       color: $our-history-title-font-color;
-      font-size: 36px;
+      font-size: $section-title-fontSize;
     }
 
     p {
@@ -356,7 +367,7 @@ a:link, a:visited, a:hover, a:active {
     h3 {
       border-right: 6px solid $main-red-color;
       color: $our-service-title;
-      font-size: 36px;
+      font-size: $section-title-fontSize;
       text-transform: uppercase;
       padding-right: 40px;
     }
@@ -374,8 +385,6 @@ a:link, a:visited, a:hover, a:active {
       position: relative;
     }
   }
-
-
 
   .ourService--separator--item {
     position: absolute;
@@ -403,12 +412,115 @@ a:link, a:visited, a:hover, a:active {
     }
   }
 
-
   .ourService--img-part {
     width: 50%;
     background: url(../img/service-ipad.jpg) no-repeat left top;
     background-size: 100% 100%;
   }
 }
-
 /***** ----- End Our service ----- *****/
+
+
+/***** ----- Recent works ----- *****/
+.recentWorks {
+  width: 100%;
+  color: $recent-works-plain-text-color;
+
+  .recentWorks--header, .recentWorks--navigation {
+    padding: 0 20px;
+  }
+
+  .recentWorks--header {
+    text-align: center;
+    margin-top: 150px;
+
+    h3 {
+      color: $recent-works-title-color;
+      text-transform: uppercase;
+      font-size: $section-title-fontSize;
+      margin-bottom: 30px;
+    }
+
+    .section--separator__inner .separator--line {
+      border-bottom-color: #6a6a6a;
+    }
+  }
+
+  .recentWorks--navigation {
+    ul > li {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      position: relative;
+
+      &:hover, &.active {
+        cursor: pointer;
+        color: $main-red-color;
+      }
+
+      &:not(:last-child):after {
+        content: '/';
+        position: absolute;
+        right: 0;
+        color: $recent-works-plain-text-color;
+      }
+    }
+  }
+
+  .recentWorks--images {
+    margin-top: 50px;
+    overflow: hidden;
+
+    .recentWorks--images--itemContainer {
+      flex: 1 0 400px;
+      height: 480px;
+      flex-grow: 1;
+      overflow: hidden;
+
+      &:nth-child(1) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-1.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(2) > .recentWorks--images--item  {
+        background: transparent url(../img/recentWorks-2.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(3) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-3.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(4) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-4.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(5) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-5.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(6) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-6.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(7) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-7.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+      &:nth-child(8) > .recentWorks--images--item {
+        background: transparent url(../img/recentWorks-8.jpg) no-repeat left top;
+        background-size: 100% 100%;
+      }
+
+    }
+
+    .recentWorks--images--item {
+      height: inherit;
+      transition: all 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+
+    }
+  }
+}
+/***** ----- End Recent works ----- *****/

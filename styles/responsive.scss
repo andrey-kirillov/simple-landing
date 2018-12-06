@@ -6,6 +6,12 @@ $nav-menu-bg-color: #fff;
 /******************** width < 768px ********************/
 @media(max-width: 768px) {
 
+  /***** ----- Start Share CSS ----- *****/
+  .section--separator__inner {
+    margin: 10px 0;
+  }
+  /***** ----- End Share CSS ----- *****/
+
   /***** ----- Start Main Header ----- *****/
   .mainHeader {
 
@@ -58,10 +64,6 @@ $nav-menu-bg-color: #fff;
 
       .mainHeader--content--afterTitle {
         max-width: 200px;
-      }
-
-      .mainHeader--separator {
-        margin: 10px 0;
       }
 
       .mainHeader--buttonGroup {
@@ -147,6 +149,15 @@ $nav-menu-bg-color: #fff;
   }
 
   /***** ----- End Our service ----- *****/
+
+  /***** ----- Recent works ----- *****/
+  .recentWorks {
+
+    .recentWorks--header {
+      margin-top: 50px;
+    }
+  }
+  /***** ----- EndRecent works ----- *****/
 }
 /******************** End width < 768px ********************/
 
